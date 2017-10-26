@@ -1,0 +1,68 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.col-lg-6 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  margin: 15px 0px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 90px;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 400;
+}
+
+div {
+  margin: 10px auto;
+}
+
+input {
+  margin:0 auto;
+  align-items: center;
+}
+
+h5 {
+  flex-wrap: wrap;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h5 {
+  flex-wrap: wrap;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.button {
+  width: 200px;
+  height: 40px;
+  background-color: #8C1A27;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 30px;
+  border-style: none;
+  margin-top: 20px;
+}
+
+.banner {
+   background: url(./images/strangerthings.jpg) no-repeat;
+   height: 400px;
+   background-size: cover;
+ }

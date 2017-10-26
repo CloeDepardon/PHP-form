@@ -1,0 +1,133 @@
+<!--
+TP creation d’un questionnaire- Une page index.html qui contient un formulaire sur un sujet au choix
+- Connaissance sur un livre, un film ou un sujet théorique
+- Devra contenir des inputs, des choix multiples et des cases a cocher
+- Au moins 10 questions
+- Ce formulaire renvoie sur un fichier .php qui va faire office de correction et afficher le nombre de réponses justes et le nombre de réponses fausses
+- BONUS : Mettre en place un système de note avec certaines questions qui valent plus de points que d’autres.  - L’affichage du questionnaire et des résultats devra être elegant et avec un minimum de style.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title> Formulaire </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700" rel="stylesheet">
+  <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+  <main>
+
+    <div class="banner container-fluid"> </div>
+    <h1 class="col-lg-12"> Connais-tu bien Stranger Things ? </h1>
+
+    <section class="flex-container">
+      <form action="./script.php">
+        <div class="container-fluid">
+
+          <div class="row">
+
+            <div class="col-lg-6">
+              <img class="center" src="./images/question1.jpg" alt="Stranger Things" width="70%">
+              <h5> 1. Stranger Things est une série : </h5> <br>
+              <input type="radio" name="country" value="q1rA"> Américaine <br>
+              <input type="radio" name="country" value="q1rB"> Anglaise <br>
+              <input type="radio" name="country" value="q1rC"> Française <br><br>
+            </div>
+
+            <div class="col-lg-6">
+              <img class="center" src="./images/question2.png" alt="Stranger Things" width="70%">
+              <h5> 2. Dans quelle ville de l'Indiana se déroule l'histoire ? </h5> <br>
+              <input type="radio" name="city" value="q2rA"> Fishers <br>
+              <input type="radio" name="city" value="q2rB"> Hawkins <br>
+              <input type="radio" name="city" value="q2rC"> Anderson <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="center" src="./images/question3.jpeg" alt="Stranger Things" width="70%">
+              <h5> 3. Quelle jeune actrice incarne le personnage d'Eleven ? </h5> <br>
+              <input type="radio" name="actress" value="q3rA"> Maisie Williams <br>
+              <input type="radio" name="actress" value="q3rB"> Natalia Dyer <br>
+              <input type="radio" name="actress" value="q3rC"> Millie Bobby Brown <br><br>
+            </div>
+
+            <div class="col-lg-6">
+              <img class="center" src="./images/question4.jpg" alt="Stranger Things" width="70%">
+              <h5> 4. Comment les enfants surnomment-ils le monstre <br> du monde à l'envers ? </h5> <br>
+              <input type="radio" name="monster" value="q4rA"> Thessalhydra <br>
+              <input type="radio" name="monster" value="q4rB"> Demogorgon <br>
+              <input type="radio" name="monster" value="q4rC"> Troglodyte <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="center" src="./images/question5.jpg" alt="Stranger Things" width="70%">
+              <h5>  5. Quels sont les prénoms des 3 amis de Will ? </h5> <br>
+              <input type="checkbox" name="nameA" value="q5rA"> Jack <br>
+              <input type="checkbox" name="nameB" value="q5rB"> Mike <br>
+              <input type="checkbox" name="nameC" value="q5rC"> Tom <br>
+              <input type="checkbox" name="nameD" value="q5rD"> Dustin <br>
+              <input type="checkbox" name="nameE" value="q5rE"> Lucas <br>
+              <input type="checkbox" name="nameF" value="q5rF"> Steve <br><br>
+            </div>
+
+            <div class="col-lg-6">
+              <img class="center" src="./images/question6.jpg" alt="Stranger Things" width="70%">
+              <h5> 6. Quelle musique culte des 80's Jonathan fait-il découvrir <br> à son petit frère Will dans un flashback de lépisode 2 ? </h5> <br>
+              <input type="radio" name="music" value="q6rA"> Should I stay or should I go <br>
+              <input type="radio" name="music" value="q6rB"> She has funny cars <br>
+              <input type="radio" name="music" value="q6rC"> I melt with you <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="center" src="./images/question7.jpg" alt="Waffles" width="70%">
+              <h5>  7. Quelle est la marque des gauffres préférées d'Eleven ? </h5> <br>
+              <input type="text" name="waffles">  <br>
+            </div>
+
+            <div class="col-lg-6">
+              <img class="center" src="./images/question8.jpg" alt="Mother" width="70%">
+              <h5> 8. Quel est le prénom de la mère de Will ? </h5> <br>
+              <input type="radio" name="mother" value="q8rA"> Charlie <br>
+              <input type="radio" name="mother" value="q8rB"> Joyce <br>
+              <input type="radio" name="mother" value="q8rC"> Maria <br><br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <img class="center" src="./images/question9.jpg" alt="Producers" width="70%">
+              <h5>  9.  Les principales influences des créateurs de la séries viennent de : </h5> <br>
+              <input type="radio" name="influence" value="q9rA"> Tim Burton et Edgar Allan Poe <br>
+              <input type="radio" name="influence" value="q9rB"> Pedro Almodovar <br>
+              <input type="radio" name="influence" value="q9rC"> Stephen King et Steven Spielberg <br><br>
+            </div>
+
+            <div class="col-lg-6">
+              <img class="center" src="./images/question10.png" alt="Jonathan" width="70%">
+              <h5> 10. De quoi est passionné Jonathan, le frère de Will ? </h5> <br>
+              <input type="radio" name="jonathan" value="q10rA"> de photographie <br>
+              <input type="radio" name="jonathan" value="q10rB"> de cinéma <br>
+              <input type="radio" name="jonathan" value="q10rC"> de danse <br><br>
+            </div>
+          </div>
+
+          <div class="row col-lg-12">
+            <input class="button" type="submit" value="Envoyer">
+          </div>
+
+        </div>
+
+      </form>
+    </section>
+  </main>
+</body>
+</html>
