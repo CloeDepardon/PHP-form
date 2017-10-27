@@ -30,24 +30,9 @@ input {
 
 h5 {
   flex-wrap: wrap;
-}
-
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-h5 {
-  flex-wrap: wrap;
   font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.flex-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
 
 .button {
   width: 200px;
@@ -65,4 +50,83 @@ h5 {
    background: url(./images/strangerthings.jpg) no-repeat;
    height: 400px;
    background-size: cover;
+ }
+
+ .flex-container {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ .flex-wrap {
+   flex-wrap: wrap;
+ }
+
+ .section-container {
+   padding-left: 10%;
+   padding-right: 10%;
+   min-height: 100vh;
+ }
+
+ .qui-suis-je {
+   background-color: #9CA39A;
+   color: #fff;
+ }
+
+ .margin {
+   margin-left: 150px;
+ }
+
+ /*******************************************/
+ /************    INPUT BUTTON   ************/
+ /*******************************************/
+
+ .option-input {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   -ms-appearance: none;
+   -o-appearance: none;
+   appearance: none;
+   height: 40px;
+   width: 40px;
+   transition: all 0.15s ease-out 0s;
+   background: #cbd1d8;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+   outline: none;
+   position: relative;
+   z-index: 1000;
+ }
+ .option-input:hover {
+   background: #9faab7;
+ }
+ .option-input:checked {
+   background: #40e0d0;
+ }
+ .option-input:checked::before {
+   height: 40px;
+   width: 40px;
+   position: absolute;
+   content: '✔';
+   display: inline-block;
+   font-size: 26.66667px;
+   text-align: center;
+   line-height: 40px;
+ }
+ .option-input:checked::after {
+   -webkit-animation: click-wave 0.65s;
+   -moz-animation: click-wave 0.65s;
+   animation: click-wave 0.65s;
+   background: #40e0d0;
+   content: '';
+   display: block;
+   position: relative;
+   z-index: 100;
+ }
+ .option-input.radio {
+   border-radius: 50%;
+ }
+ .option-input.radio::after {
+   border-radius: 50%;
  }
