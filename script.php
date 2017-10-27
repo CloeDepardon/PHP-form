@@ -12,7 +12,6 @@ isset($_GET["monster"]) && $_GET["monster"] == "q4rB" ? $total += 1 : $total = $
 if (isset($_GET["nameB"]) && isset($_GET["nameD"]) && isset($_GET["nameE"]) && !isset($_GET["nameA"]) && !isset($_GET["nameC"]) && !isset($_GET["nameF"])){
     $total += 1;
   } else {
-    var_dump($total);die;
     $total = $total;
   };
 
@@ -23,7 +22,13 @@ isset($_GET["influence"]) && $_GET["influence"] == "q9rC" ? $total += 1 : $total
 isset($_GET["jonathan"]) && $_GET["jonathan"] == "q10rA" ? $total += 1 : $total = $total;
 
 
-echo "<p> Tu as " . $total . " bonnes réponses sur 10</p>";
+
+if ($total <= 1) {
+  echo "<p> Tu as " . $total . " bonne réponse sur 10</p>";
+} else {
+  echo "<p> Tu as " . $total . " bonne(s) réponse(s) sur 10</p>";
+}
+
 
 if ($total < 3) {
   echo '<img src="./images/gif2.gif">';

@@ -62,12 +62,12 @@ require_once('./createForm.php');
     echo createDiv("col-lg-6");
       echo createImg("center", "./images/question5.jpg", "Stranger Things","50%");
       echo "<h5> 5. Quels sont les prénoms des 3 amis de Will ? </h5>";
-      echo createInput("option-input", "checkbox", "friend", "nameA", "Jack");
-      echo createInput("option-input", "checkbox", "friend", "nameB", "Mike");
-      echo createInput("option-input", "checkbox", "friend", "nameC", "Tom");
-      echo createInput("option-input", "checkbox", "friend", "nameD", "Dustin");
-      echo createInput("option-input", "checkbox", "friend", "nameE", "Lucas");
-      echo createInput("option-input", "checkbox", "friend", "nameF", "Steve");
+      echo createInput("option-input", "checkbox", "nameA", "nameA", "Jack");
+      echo createInput("option-input", "checkbox", "nameB", "nameB", "Mike");
+      echo createInput("option-input", "checkbox", "nameC", "nameC", "Tom");
+      echo createInput("option-input", "checkbox", "nameD", "nameD", "Dustin");
+      echo createInput("option-input", "checkbox", "nameE", "nameE", "Lucas");
+      echo createInput("option-input", "checkbox", "nameF", "nameF", "Steve");
       echo "<br>";
     echo closeTag("div");
 
