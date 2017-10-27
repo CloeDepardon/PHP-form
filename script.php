@@ -26,7 +26,7 @@ isset($_GET["jonathan"]) && $_GET["jonathan"] == "q10rA" ? $total += 1 : $total 
 if ($total <= 1) {
   echo "<p> Tu as " . $total . " bonne réponse sur 10</p>";
 } else {
-  echo "<p> Tu as " . $total . " bonne(s) réponse(s) sur 10</p>";
+  echo "<p> Tu as " . $total . " bonnes réponses sur 10</p>";
 }
 
 
