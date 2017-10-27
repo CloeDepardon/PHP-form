@@ -15,7 +15,7 @@ require_once('./createForm.php');
 
 <body>
   <?php
-  echo openForm("./script.php");
+  echo openForm("./correction.php");
 
   echo createDiv("banner container-fluid");
   echo closeTag("div");
